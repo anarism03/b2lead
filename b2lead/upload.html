@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Upload Customer Data</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <!-- Same as index.html -->
+    <ul>
+      <li><a href="index.html">Dashboard</a></li>
+      <li><a href="upload.html">Upload Customers</a></li>
+      <li><a href="manual-entry.html">Add Customer</a></li>
+      <li><a href="list-customers.html">Customer List</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <h1>Upload Customer Data from Excel/CSV</h1>
+    <form id="upload-form">
+      <label for="file-input">Select Excel or CSV file:</label>
+      <input type="file" id="file-input" accept=".xlsx, .csv" required />
+      <button type="submit">Upload</button>
+    </form>
+
+    <!-- Data Preview Table -->
+    <section id="data-preview-section" style="display: none;">
+      <h2>Data Preview</h2>
+      <table id="data-preview">
+        <!-- Data will be populated here -->
+      </table>
+      <button id="save-data">Save Data</button>
+    </section>
+  </main>
+
+  <script src="assets/libs/xlsx.full.min.js"></script>
+  <script src="assets/js/validate.js"></script>
+  <script src="assets/js/upload.js"></script>
+</body>
+</html>

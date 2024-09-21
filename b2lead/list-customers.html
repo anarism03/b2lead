@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Customer List</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <!-- Same as index.html -->
+    <ul>
+      <li><a href="index.html">Dashboard</a></li>
+      <li><a href="upload.html">Upload Customers</a></li>
+      <li><a href="manual-entry.html">Add Customer</a></li>
+      <li><a href="list-customers.html">Customer List</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <h1>Customer List</h1>
+    <!-- Search and Sort Controls -->
+    <section id="search-sort-controls">
+      <input type="text" id="search-input" placeholder="Search customers..." />
+      <select id="sort-select">
+        <option value="fullName">Sort by Name</option>
+        <option value="email">Sort by Email</option>
+        <option value="company">Sort by Company</option>
+        <!-- Add more sort options if needed -->
+      </select>
+    </section>
+
+    <!-- Customer Table -->
+    <table id="customer-table">
+      <thead>
+        <tr>
+          <th>Full Name</th>
+          <th>Email</th>
+          <th>Phone Number</th>
+          <th>Company</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Customer rows will be populated here -->
+      </tbody>
+    </table>
+  </main>
+
+  <script src="assets/js/search-sort.js"></script>
+</body>
+</html>

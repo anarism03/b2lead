@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Manual Entry of Customer Data</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <!-- Same as index.html -->
+    <ul>
+      <li><a href="index.html">Dashboard</a></li>
+      <li><a href="upload.html">Upload Customers</a></li>
+      <li><a href="manual-entry.html">Add Customer</a></li>
+      <li><a href="list-customers.html">Customer List</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <h1>Manually Add a Customer</h1>
+    <form id="manual-entry-form">
+      <label for="full-name">Full Name<span>*</span>:</label>
+      <input type="text" id="full-name" name="full-name" required />
+
+      <label for="email">Email<span>*</span>:</label>
+      <input type="email" id="email" name="email" required />
+
+      <label for="phone-number">Phone Number<span>*</span>:</label>
+      <input type="tel" id="phone-number" name="phone-number" required />
+
+      <label for="company">Company:</label>
+      <input type="text" id="company" name="company" />
+
+      <label for="department">Department:</label>
+      <input type="text" id="department" name="department" />
+
+      <label for="position">Position:</label>
+      <input type="text" id="position" name="position" />
+
+      <button type="submit">Save Customer</button>
+    </form>
+  </main>
+
+  <script src="assets/js/validate.js"></script>
+  <script src="assets/js/manual-entry.js"></script>
+</body>
+</html>

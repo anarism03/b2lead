@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Customer Details</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <!-- Same as index.html -->
+    <ul>
+      <li><a href="index.html">Dashboard</a></li>
+      <li><a href="upload.html">Upload Customers</a></li>
+      <li><a href="manual-entry.html">Add Customer</a></li>
+      <li><a href="list-customers.html">Customer List</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <h1>Customer Details</h1>
+    <!-- Display customer information -->
+    <section id="customer-info">
+      <!-- Customer details will be loaded here -->
+    </section>
+
+    <!-- Edit Form -->
+    <section id="edit-customer-section" style="display: none;">
+      <h2>Edit Customer Information</h2>
+      <form id="edit-customer-form">
+        <!-- Same fields as manual-entry-form -->
+        <label for="edit-full-name">Full Name<span>*</span>:</label>
+        <input type="text" id="edit-full-name" name="full-name" required />
+
+        <label for="edit-email">Email<span>*</span>:</label>
+        <input type="email" id="edit-email" name="email" required />
+
+        <label for="edit-phone-number">Phone Number<span>*</span>:</label>
+        <input type="tel" id="edit-phone-number" name="phone-number" required />
+
+        <label for="edit-company">Company:</label>
+        <input type="text" id="edit-company" name="company" />
+
+        <label for="edit-department">Department:</label>
+        <input type="text" id="edit-department" name="department" />
+
+        <label for="edit-position">Position:</label>
+        <input type="text" id="edit-position" name="position" />
+
+        <button type="submit">Update Customer</button>
+      </form>
+    </section>
+
+    <!-- Action Buttons -->
+    <button id="edit-button">Edit</button>
+    <button id="delete-button">Delete</button>
+  </main>
+
+  <script src="assets/js/validate.js"></script>
+  <script src="assets/js/edit-delete.js"></script>
+</body>
+</html>
